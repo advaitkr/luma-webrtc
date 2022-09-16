@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 })
 app.get('/meeting',(req,res)=>{
 
-    res.send(`${process.env.SERVER_URL}/${uuidv4()}`)
+    res.send(`https://luma-webrtc.herokuapp.com/${uuidv4()}`)
 })
 
 app.get('/:room',(req,res)=>{
