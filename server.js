@@ -17,7 +17,7 @@ app.get('/',(req,res)=>{
 })
 app.get('/meeting',(req,res)=>{
 
-    res.send(`http://localhost:3030/${uuidv4()}`)
+    res.send(`${process.env.SERVER_URL}/${uuidv4()}`)
 })
 
 app.get('/:room',(req,res)=>{
