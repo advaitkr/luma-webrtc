@@ -161,6 +161,7 @@ const muteUnmute = () => {
 
   const leave = ()=>{
     document.getElementById('video-grid').style.display ='none'
+    history.go(-1)
   }
 
   const myFunction = ()=>{
